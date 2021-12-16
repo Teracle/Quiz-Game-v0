@@ -88,7 +88,7 @@ getNewQuestion=()=>{
     
     if(availableQuestions.length==0 && questionCounter>=max_questions){
     localStorage.setItem('mostRecentScore',score);
-        return window.location.assign('../views/end.html');
+        return window.location.assign('end.html');
     }
 
 questionCounter++;
