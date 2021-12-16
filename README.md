@@ -1,1 +1,1 @@
-Project is on the https://github.com/Teracle/Quiz-Game-v0
+Project is on the https://teracle.github.io/Quiz-Game-v0/
