@@ -88,7 +88,7 @@ getNewQuestion=()=>{
     
     if(availableQuestions.length==0 && questionCounter>=max_questions){
     localStorage.setItem('mostRecentScore',score);
-        return window.location.assign('/end');
+        return window.location.assign('../js/end.html');
     }
 
 questionCounter++;
@@ -109,7 +109,7 @@ availableQuestions.splice(questionIndex,1);
 acceptingAnswers=true;
 };
 var correct_audio=new Audio('../static/sound_effects/correct.mp3');
-var wrong_audio=new Audio('..static/sound_effects/wrong.mp3');
+var wrong_audio=new Audio('../static/sound_effects/wrong.mp3');
 choices.forEach(choice=>{
     choice.addEventListener('click',e=>{
         if(!acceptingAnswers) return;
