@@ -108,8 +108,8 @@ choices.forEach(choice=>{
 availableQuestions.splice(questionIndex,1);
 acceptingAnswers=true;
 };
-var correct_audio=new Audio('/sound_effects/correct.mp3');
-var wrong_audio=new Audio('/sound_effects/wrong.mp3');
+var correct_audio=new Audio('../static/sound_effects/correct.mp3');
+var wrong_audio=new Audio('..static/sound_effects/wrong.mp3');
 choices.forEach(choice=>{
     choice.addEventListener('click',e=>{
         if(!acceptingAnswers) return;
