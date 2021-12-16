@@ -18,19 +18,19 @@ app.get("/",(req,res)=>{
    res.render("index.html");
 });
 app.get("/game",(req,res)=>{
-    res.render("game",{
+    res.render("game.html",{
         title:"Play"
     });
 });
  
 app.get("/highscores",(req,res)=>{
-    res.render("highscores",{
+    res.render("highscores.html",{
         title:"Highscores"
     });
 });
 
 app.get("/end",(req,res)=>{
-    res.render("end",{
+    res.render("end.html",{
         title:"End"
     });
 });
