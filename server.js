@@ -15,7 +15,7 @@ app.use(express.static("js"));
 app.set('view engine','.html')
 
 app.get("/",(req,res)=>{
-   res.render("index");
+   res.render("index.html");
 });
 app.get("/game",(req,res)=>{
     res.render("game",{
